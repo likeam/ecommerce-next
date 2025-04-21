@@ -39,9 +39,9 @@ const Menu = () => {
             <SheetHeader>
               <SheetTitle>Menu</SheetTitle>
               <SheetDescription>
-                <div className=" space-x-2">
-                  <ModeToggle />
-                  <Button asChild variant="ghost">
+                <ModeToggle />
+                <div className=" flex flex-col items-start space-y-2">
+                  <Button asChild variant="ghost" className=" justify-start">
                     <Link href="/cart" className=" flex-start">
                       <ShoppingCart />
                       Cart
@@ -54,7 +54,6 @@ const Menu = () => {
                     </Link>
                   </Button>
                 </div>
-                <Menu />
               </SheetDescription>
             </SheetHeader>
           </SheetContent>
