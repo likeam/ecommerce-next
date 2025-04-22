@@ -1,24 +1,26 @@
-import { Button } from "@/components/ui/button";
-import { APP_NAME, APP_NAME_DESCRIPTION, SERVICE_URL } from "@/lib/constants";
+import ProductList from "@/components/shared/products/product-list";
+import sampleData from "@/db/sample-data";
 import { Metadata } from "next";
+
 import React from "react";
 
 export const metadata: Metadata = {
-  title: {
-    template: "%s | Ecommrce Next",
-    default: `${APP_NAME}`,
-  },
-  description: `${APP_NAME_DESCRIPTION}`,
-  metadataBase: new URL(SERVICE_URL),
+  title: "Home",
 };
 
-const HomePage = () => {
+const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+
+const HomePage = async () => {
+  await delay(1000);
+  // console.log(sampleData);
   return (
-    <div>
-      page
-      <br />
-      <Button>Click me</Button>
-    </div>
+    <>
+      <ProductList
+        data={sampleData.products}
+        title="Latest Arrivals"
+        limit={4}
+      />
+    </>
   );
 };
 

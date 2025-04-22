@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "@/assets/styles/globals.css";
-import { APP_NAME, APP_NAME_DESCRIPTION } from "@/lib/constants";
+import { APP_NAME, APP_NAME_DESCRIPTION, SERVICE_URL } from "@/lib/constants";
 import { ThemeProvider } from "@/components/theme-provider";
 
 const roboto = Roboto({
@@ -12,6 +12,7 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: `${APP_NAME}`,
   description: `${APP_NAME_DESCRIPTION}`,
+  metadataBase: new URL(SERVICE_URL),
 };
 
 export default function RootLayout({
