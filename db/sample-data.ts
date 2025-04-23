@@ -22,8 +22,6 @@ const sampleData = {
       description: "Monti Sport shoes for lady",
       images: [
         "https://utfs.io/f/HI9tOglpZNuRyB1OGYWXfM69BcwTqWAlC7gsmju2nhIRbp0Y",
-        "https://utfs.io/f/HI9tOglpZNuRDPuBXGJx0mci8FJr4lDf1uLbvoXIt7WzSdeg",
-        "https://utfs.io/f/HI9tOglpZNuR7sIZkXXL3H0VstzF5niqmpB2kdoQUgGYuORW",
       ],
       price: 59.99,
       brand: "Monti",

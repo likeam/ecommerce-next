@@ -5,3 +5,6 @@ export const APP_NAME_DESCRIPTION =
 
 export const SERVICE_URL =
   process.env.NEXT_PUBLIC_SERVICE_URL || "http://localhost:3000/";
+
+export const LATEST_PRODUCTS_LIMIT =
+  Number(process.env.LATEST_PRODUCTS_LIMIT) || 4;
